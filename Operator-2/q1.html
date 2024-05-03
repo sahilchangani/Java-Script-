@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>-------------Result------------</h1>
+        <h2>Maths marks</h2>
+        <input id="s1" type="text">
+        <h2>Gujrati marks</h2>
+        <input id="s2" type="text">
+        <h2>English marks</h2>
+        <input id="s3" type="text">
+        <h2>Pt marks</h2>
+        <input id="s4" type="text">
+        <h2>Economics marks</h2>
+        <input id="s5" type="text">
+
+        <h1 id="ans"></h1>
+    </center>
+    </body>
+</html>
+<script>
+    let a = document.getElementById("s1").value
+    let b = document.getElementById("s2").value
+    let c = document.getElementById("s3").value
+    let d = document.getElementById("s4").value
+    let e = document.getElementById("s5").value
+    let total = (+a + +b + +c + +d + +e)*100/500
+    document.getElementById("ans").innerHTML=total
+</script>
