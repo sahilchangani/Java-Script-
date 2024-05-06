@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+    <h1 style="font-family: cursive;">"Body Mass Index"</h1> <br>
+    <h3>Enter Your Width :</h3>
+    <input type="text" id="s1">
+    <h3>Enter Your Height :</h3>
+    <input type="text" id="s2">
+    <h1 id="ans"></h1></center>
+</body>
+</html>
+
+<script>
+    var Height = document.getElementById("s2").value;  
+    var Wight = document.getElementById("s1").value;
+    var BMI = +Wight / (+Height * +Height)
+
+    document.getElementById("ans").innerHTML=BMI
+
+</script>

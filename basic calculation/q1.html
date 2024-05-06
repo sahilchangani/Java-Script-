@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+    <h1 style="font-family: cursive;"> "shopping cart"</h1> <br>
+    <h3>Price of the product</h3>
+    <input type="text" id="s1">
+    <h3>quantity of the product</h3>
+    <input type="text" id="s2">
+
+    <h1 id="ans"></h1></center>
+    <br>
+</body>
+</html>
+
+<script>
+    var price = document.getElementById("s1").value;
+    var quantity = document.getElementById("s2").value;  
+    var totalCost = +price * +quantity
+
+    document.getElementById("ans").innerHTML=totalCost
+
+</script>

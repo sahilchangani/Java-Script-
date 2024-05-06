@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+    <h1 style="font-family: cursive;"> "Speed and Time Calculation"</h1> <br>
+    <h3>Enter the distance travelled in meters:</h3>
+    <input type="text" id="s1">
+    <h3>Enter the time taken in seconds:</h3>
+    <input type="text" id="s2">
+
+    <h1 id="ans"></h1></center>
+</body>
+</html>
+
+<script>
+    var distance= document.getElementById("s1").value;
+    var time = document.getElementById("s2").value;  
+    var speed = +distance / +time
+
+    document.getElementById("ans").innerHTML=speed
+
+</script>
