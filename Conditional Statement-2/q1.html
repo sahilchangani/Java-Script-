@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>***Bill***</h1>
+    <br><br>
+    <h2>Enter Units</h2>
+        <input type="text" id="s1">
+<h1 id="ans"></h1>
+</center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("s1").value
+    
+       if (a < 100) {
+        let b = +a *1
+    document.getElementById("ans").innerHTML= b     
+       } 
+       else if (a>100 &&  a<200) {
+        let c = +a *2
+
+        document.getElementById("ans").innerHTML= c 
+
+       }
+       else if(a>200){
+        let d = +a *3
+
+        document.getElementById("ans").innerHTML= d     
+
+       }
+</script>

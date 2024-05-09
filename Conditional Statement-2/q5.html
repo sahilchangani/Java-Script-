@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>  <h1>**Marks**</h1> <br><br>
+    <h2>Enter Marks :</h2>
+    <input type="text" id="s1">
+    <h1 id="ans"></h1>
+</center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("s1").value
+    if ( a === "") {
+        document.getElementById("ans").innerHTML="Enter valid number"
+    }
+    else{
+        if (a >=90 && a<= 100) {
+            document.getElementById("ans").innerHTML="A"
+        }
+        else if(a >= 80 && a<= 89){
+            document.getElementById("ans").innerHTML="B"
+        }
+        else if(a >= 70 && a<= 79){
+            document.getElementById("ans").innerHTML="C"
+        }
+        else if(a >= 60 && a<= 69){
+            document.getElementById("ans").innerHTML="D"
+        }
+        else   {
+            document.getElementById("ans").innerHTML="E"
+
+        }
+    }
+
+</script>
