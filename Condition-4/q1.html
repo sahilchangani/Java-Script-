@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-decoration: underline;">------Grade------</h1> <br><br>
+        <h2>Enter Student Marks:</h2>
+        <input id="s1" type="text">
+        <h1 id="ans"></h1>
+
+    </center>
+</body>
+</html>
+<script>
+    let marks = document.getElementById("s1").value
+    if (marks === "") {
+        document.getElementById("ans").innerHTML="Enter Valiid number"
+    }else{
+        if (marks >= 90) {
+            document.getElementById("ans").innerHTML="A+"
+        }
+        else if (marks >= 80) {
+            document.getElementById("ans").innerHTML="A"
+        }
+        else if (marks >= 70) {
+            document.getElementById("ans").innerHTML="B"
+        }
+        else if (marks >= 60) {
+            document.getElementById("ans").innerHTML="C"
+        }    else{
+        document.getElementById("ans").innerHTML="Fail"
+    }
+
+    }
+</script>
