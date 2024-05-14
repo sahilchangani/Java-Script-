@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1 style="text-decoration: underline; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"">----Discount----</h1>
+
+    <h2>Enter Your Price: </h2>
+    <input type="text" id="s1">
+    <h1 id="ans"></h1>
+    <h1 id="ans1"></h1>
+</center>
+</body>
+</html>
+
+
+<script>
+    let price = document.getElementById("s1").value
+
+
+    if (price === "") {
+        document.getElementById("ans").innerHTML="Enter Valid Price"
+    }else{
+
+        if (price >= 100) {
+            price = price - (price * (20/100))
+            document.getElementById("ans1").innerHTML= "Your Discount is 20%"
+
+            document.getElementById("ans").innerHTML= price
+        }
+        else if(price >= 50){
+            price = price - (price * (10/100))
+
+            document.getElementById("ans1").innerHTML= "Your Discount is 10%"
+            document.getElementById("ans").innerHTML= price
+
+
+        }
+            else{
+                document.getElementById("ans1").innerHTML= "Sorry ! You Can't Get Discount"
+                document.getElementById("ans").innerHTML= price
+             
+            }
+
+    }
+
+</script>

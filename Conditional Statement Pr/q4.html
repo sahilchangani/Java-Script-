@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>  <h1 style="text-decoration: underline; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">----Convert----</h1>
+
+        <h2>Enter Dollars: </h2>
+        <input type="text" id="s1">
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+let dollars = document.getElementById("s1").value
+let rupees = dollars*83.51
+document.getElementById("ans").innerHTML="Your Rupees is =" + rupees
+
+
+</script>
