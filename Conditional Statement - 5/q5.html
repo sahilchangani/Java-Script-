@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <center>
+        <h1>**Menu**</h1>
+        
+        <h5>Iced Caffè Americano</h5>
+        <h5>Italian Roast</h5>
+        <h5>Cappuccino</h5>
+        <h5>Cold coffee</h5>
+        <h5>Kenya</h5>
+      
+        <h1>Enter Item</h1>
+        <input type="text" id="in">
+        <h2 id="ans"></h2>
+
+    </center>
+</body>
+
+</html>
+
+<script>
+    let item = document.getElementById("in").value
+    if (item === "") {
+        document.getElementById("ans").innerHTML = "Enter any Item"
+    } else {
+        switch (item) {
+            case "Iced Caffè Americano": document.getElementById("ans").innerHTML = "₹ 383.25"
+                break
+            case "Italian Roast": document.getElementById("ans").innerHTML = "₹ 278.25"
+                break
+            case "Cappuccino": document.getElementById("ans").innerHTML = "₹ 372.75"
+                break
+            case "Cold coffee": document.getElementById("ans").innerHTML = "₹ 414.75"
+                break
+            case "Kenya": document.getElementById("ans").innerHTML = "₹ 252.00"
+                break
+            default:
+                document.getElementById("ans").innerHTML = "Invalid item"
+                break
+        }
+    }
+</script>

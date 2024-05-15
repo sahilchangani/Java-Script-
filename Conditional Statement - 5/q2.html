@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>------Calculator------</h1>
+
+        <h2>Enter First Number :</h2>
+        <input type="number" id="s1">
+        <h2>Enter Opertor  :</h2>
+        <input type="text" id="s2">
+        <h2>Enter Second Number:</h2>
+        <input type="number" id="s3">
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+    let a = document.getElementById("s1").value;
+    let b = document.getElementById("s2").value;
+    let c = document.getElementById("s3").value;
+    
+    if (a === "" && b === "" && c === "") {
+        document.getElementById("ans").innerHTML="Enter Operator"
+    }else{
+        
+        switch (b) {
+            case "+":
+                document.getElementById("ans").innerHTML= +a + +c
+                break;
+                case "-":
+                document.getElementById("ans").innerHTML=+a - +c
+                break;
+                case "*":
+                document.getElementById("ans").innerHTML=+a * +c
+                break;
+                case "/":
+                document.getElementById("ans").innerHTML=+a / +c
+                break;
+
+            default:
+            document.getElementById("ans").innerHTML="Enter Valid Oprator"
+
+                break;
+        }
+
+
+    }
+
+
+</script>
