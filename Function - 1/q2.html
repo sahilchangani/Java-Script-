@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>  <h1>Enter The Number:</h1>
+    <input id="s1" type="text">
+    <h1>Enter The Number:</h1>
+    <input id="s2" type="text">
+    <h1>Enter The Number:</h1>
+    <input id="s3" type="text">
+
+
+    <h1 id="ans"></h1>
+</center>
+</body>
+</html>
+
+<script>
+
+    let a = document.getElementById("s1").value
+    let b = document.getElementById("s2").value
+    let d = document.getElementById("s3").value
+
+
+    function  c(){
+    let total = +a + +b + +d
+        document.getElementById("ans").innerHTML=total
+    }
+    c()
+
+
+
+</script>
