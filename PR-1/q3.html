@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+let quotes = [
+        {name: "sorthi barvatiyo: Kadu makrani", author:"Javerchand Meghani", price:"80", Quantity: "1", },
+        {name: "The Legend", author:"Sahil Changani", price:"20", Quantity: "2" },
+        {name: "The Cast Away", author:"Ryan Gosling", price:"10", Quantity: "0" },
+        {name: "Bad Behaviour", author:"will smith", price:"50", Quantity: "2" },
+]
+let ans = quotes.filter((el) => {
+        if (el.price < 60 && el.Quantity > 0) {
+
+            return el
+        }
+        else{
+            return null
+        }
+        
+    })
+    console.log(ans);
+
+
+</script>
