@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+</style>
+<body>
+   <center><br><br><br>
+    <h1>Sahil changani</h1>
+    <button onclick="cngcolor()">Click</button>
+    <h3>Sahil changani</h3>
+    <button onclick="cngcolor1()">Click</button>
+    <h5>Sahil Changani</h5>
+    <button onclick="cngcolor2()">Click</button>
+    <br><br>
+    <h3 class="green">Sahil changnai</h3>
+    <button  onclick="cngcolor3()">Click</button>
+    <h3 class="blue">Sahil changnai</h3>
+    <button  onclick="cngcolor4()">Click</button>
+    <h3 class="red">Sahil changnai</h3>
+    <button  onclick="cngcolor5()">Click</button>
+   </center> 
+</body>
+</html>
+<script>
+function cngcolor(){
+    document.querySelector("h1").style.color="red"
+    
+}
+function cngcolor1(){
+    document.querySelector("h3").style.color="green"
+}
+function cngcolor2(){
+    document.querySelector("h5").style.color="blue"
+}
+function cngcolor3(){
+    document.querySelector(".green").style.color="green"
+}
+function cngcolor4(){
+    document.querySelector(".blue").style.color="blue"
+}
+function cngcolor5(){
+    document.querySelector(".red").style.color="red"
+}
+</script>
