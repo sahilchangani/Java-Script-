@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        center {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+            color: #333;
+        }
+
+        input[type="text"] {
+            font-size: 16px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        #submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            animation: scaleIn 0.5s ease-in-out;
+        }
+
+        #submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <form id="signup" action="">
+            <span id="err"></span>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <label for="password">Password</label>
+            <input type="text" id="password">
+            <label for="text">Confirm Password</label>
+            <input type="text" id="cp">
+           
+                <label for="date">Date</label>
+                <input type="date" id="date">
+
+                <label for="hobby">Hobby</label>
+                <input type="text" id="hobby">
+
+                <label for="Gender">Gender</label>
+                <select id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </select>
+            <button id="submit">Submit</button>
+        </form>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+
+    document.getElementById("signup").onsubmit = function(event){
+        document.getElementById("err").innerHTML = ""
+        event.preventDefault()
+
+try{
+        let name = document.getElementById("name").value
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            let cp = document.getElementById("cp").value
+            let date = document.getElementById("date").value
+            let hobby = document.getElementById("hobby").value
+
+            if (name === "" || /\d/.test(name)) {
+                throw new Error("Please Fullfill your Name.")
+            }
+            if (email === "" ||! /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ .test(email)) {
+                throw new Error("Please Fullfill Your Email.")
+            }
+            if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/ .test(password)) {
+                throw new Error("Please enter 8 digit Password.")
+            }
+            if (password !== cp) {
+                throw new Error("Password does not match")
+            }
+            if (date === "") {
+                throw new Error("Please enter the required detail.")
+            }
+            if (hobby === "") {
+                throw new Error("Please enter the required detail.")
+            }
+        }
+    
+    catch (e) {
+            document.getElementById("err").innerHTML = e.message
+            document.getElementById("err").style.color = "red"
+        }
+   
+    }
+
+    
+
+
+</script>
