@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+
+class Food {
+        eat(name){
+            console.log(this.name);
+        }
+    }
+    class Pizza extends Food {
+        eat(name){
+            console.log(name + " is Ordered")
+        }
+    }
+    class Sushi extends Food {
+        eat(name){
+            console.log(name + " is Ordered")
+        }
+    }
+
+
+    class Burger extends Food {
+        eat(name){
+            console.log(name + " is Ordered")
+        }
+    }
+    let pizza = new Pizza()
+    pizza.eat("Bajra Pizza")
+    let shusi = new Sushi()
+    shusi.eat("Rajsthani Shusi")
+    let burger = new Burger()
+    burger.eat("Simpal Burger")
+
+
+</script>
