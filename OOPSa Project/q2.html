@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+      class automobile{
+        constructor (name , price ,avarage){
+            this.name = name
+            this.price = price
+            this.avarage = avarage 
+        }
+        showrange(name , avarage){
+        console.log(this.name +" Range is " +  this.avarage + " Km/h")
+        }
+        price(name , price){
+        console.log(this.name +" Price is " + this.price +" Rs")
+        }
+    }
+    class electricVehicle extends automobile {
+    }
+
+let ford = new electricVehicle("Ford",814000,100)
+ford.showrange("Ford",100)
+ford.price("ford",916000)
+let benz = new electricVehicle("Benz",1140000,190)
+benz.showrange("Benz",190)
+benz.price("Benz",1440000)
+
+   
+</script>

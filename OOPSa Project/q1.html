@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    let arr = [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Array.prototype.numSquare = function (el) {
+        let Arr = []
+        for (let i = 0; i < this.length; i++) {
+            Arr.push(el(this[i]))
+        }
+        return Arr
+    }
+
+    Array.prototype.evenNum = function (el) {
+        let Arr2 = []
+        for (let i = 0; i < this.length; i++) {
+            if (el(this[i])) {
+                Arr2.push(this[i])
+            }
+        }
+        return Arr2
+    }
+    let ans = arr.numSquare((el) => {
+        return el * 2
+    })
+    console.log(ans);
+
+    let ans2 = arr.evenNum((el) => {
+        return el % 2 == 0
+    })
+    console.log(ans2);
+
+
+</script>
