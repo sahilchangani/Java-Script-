@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+.s1{
+    margin-top: 8%;
+  border:  1px solid;  
+  height: 170px;
+  width: 100%;
+  background-color: #02395a;
+  display: flex;
+}
+.s2{
+    /* border: 1px solid; */
+    height: 170px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :5px;
+}
+
+</style>
+<body>
+
+    <div class="s1">
+  <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-user"></i><br><h1 style="color: white; font-size: 20px;" class="a1"></h1><h6 style="color: gray;">Students Trained</h6></div>
+        <div class="s2"><i style="color: white; font-size: 25px;"class="fa-solid fa-building"></i><h1 style="color: white; font-size: 20px;" class="a2"></h1><h6 style="color: gray;">Branches</h6></div>
+        <div class="s2"><img src="https://www.rnwmultimedia.edu.in/images/certificate.png" alt="" style="height: 37.5px;"><h1 style="color: white; font-size: 20px;" class="a3"></h1><h6 style="color: gray;">Certification</h6></div>
+        <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-user"></i><h1 style="color: white; font-size: 20px;" class="a4"></h1><h6 style="color: gray;">Approved Course</h6></div>
+        <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-user"></i><h1 style="color: white; font-size: 20px;" class="a5"></h1><h6 style="color: gray;">Compnies Tie-Up</h6></div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+let index1 = 0;
+let start1=setInterval(()=>{
+index1+=100
+document.querySelector(".a1").innerHTML= index1 + " +"
+if (index1 === 37500) {
+    clearInterval(start1)
+}
+
+},10)
+
+let index2 = 0;
+let start2=setInterval(()=>{
+index2++
+document.querySelector(".a2").innerHTML= index2 + " +"
+if (index2 === 22) {
+    clearInterval(start2)
+}
+
+},100)
+
+let index3 = 0;
+let start3=setInterval(()=>{
+index3++
+document.querySelector(".a3").innerHTML= index3 + " +"
+if (index3 === 8) {
+    clearInterval(start3)
+}
+
+},100)
+
+let index4 = 0;
+let start4=setInterval(()=>{
+index4+=5
+document.querySelector(".a4").innerHTML= index4 + " +"
+if (index4 === 50) {
+    clearInterval(start4)
+}
+
+},100)
+let index5 = 0;
+let start5=setInterval(()=>{
+index5+=10
+document.querySelector(".a5").innerHTML= index5 + " +"
+if (index5 === 1500) {
+    clearInterval(start5)
+}
+
+},10)
+
+
+</script>
