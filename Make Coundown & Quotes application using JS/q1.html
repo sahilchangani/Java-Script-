@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    img {
+        height: 450px;
+        width: 100%;
+        display: none;
+        margin-top: 50px;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .s1 {
+        /* margin-top: 8%; */
+        /* border:  1px solid;   */
+        height: 170px;
+        width: 80%;
+        background-color: #D88561;
+        display: flex;
+    }
+
+    .s2 {
+        /* border: 1px solid; */
+        height: 170px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 15px;
+    }
+</style>
+
+<body style="background-color: gainsboro">
+    <div style="height: 5px; width: 42%; border: 1px solid; margin-top: 20px; background-color: rgb(8, 27, 239); position: absolute; "></div>
+    <center>
+        <h1
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #D88561;" >
+            Make My Trip</h1>
+    </center>
+    <div style="height: 5px; width: 42%; border: 1px solid; margin-top: -20px; margin-left: 58%; background-color: rgb(68, 11, 225);  position: absolute; "></div>
+    <img src="https://preview.colorlib.com/theme/travelo/img/banner/banner2.png" alt="">
+    <img src="https://preview.colorlib.com/theme/travelo/img/banner/banner3.png" alt="">
+    <img src="https://preview.colorlib.com/theme/travelo/img/banner/banner.png" alt="">
+    <br><br>
+
+    <center>
+        <div class="s1">
+            <div class="s2"><i style="color: white; font-size: 25px; margin-top: 2%;" class="fa-solid fa-globe"></i><br>
+                <h1 style="color: white; font-size: 20px;" class="a1"></h1>
+                <h3 style="color: rgb(249, 248, 248); display: block;">Country</h3>
+            </div>
+            <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-building"></i>
+                <h1 style="color: white; font-size: 20px;" class="a2"></h1>
+                <h3 style="color: rgb(253, 250, 250);">Happy Customer</h3>
+            </div>
+            <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-certificate"></i>
+                <h1 style="color: white; font-size: 20px;" class="a3"></h1>
+                <h3 style="color: rgb(245, 243, 243);">Certification</h3>
+            </div>
+            <div class="s2"><i style="color: white; font-size: 25px;" class="fa-solid fa-hotel"></i>
+                <h1 style="color: white; font-size: 20px;" class="a4"></h1>
+                <h3 style="color: rgb(227, 226, 226);">Hotels</h3>
+            </div>
+        </div>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+
+    let pic = document.querySelectorAll("img")
+    let index = 0
+
+    function slides(index) {
+        for (let i = 0; i < pic.length; i++) {
+            pic[i].style.display = "none"
+        }
+        pic[index].style.display = "block"
+
+    }
+
+    function show() {
+        setInterval(() => {
+            slides(index)
+            index++
+            if (index === pic.length) {
+                index = 0
+            }
+        }, 1000)
+    }
+    show()
+
+    let index1 = 0;
+    let start1 = setInterval(() => {
+        index1++
+        document.querySelector(".a1").innerHTML = index1 + " +"
+        if (index1 === 80) {
+            clearInterval(start1)
+        }
+
+    }, 10)
+
+    let index2 = 0;
+    let start2 = setInterval(() => {
+        index2 += 10
+        document.querySelector(".a2").innerHTML = index2 + " +"
+        if (index2 === 1500) {
+            clearInterval(start2)
+        }
+
+    }, 1)
+
+    let index3 = 0;
+    let start3 = setInterval(() => {
+        index3++
+        document.querySelector(".a3").innerHTML = index3 + " +"
+        if (index3 === 18) {
+            clearInterval(start3)
+        }
+
+    }, 100)
+
+    let index4 = 0;
+    let start4 = setInterval(() => {
+        index4 += 5
+        document.querySelector(".a4").innerHTML = index4 + " +"
+        if (index4 === 250) {
+            clearInterval(start4)
+        }
+
+    }, 10)
+
+
+</script>
