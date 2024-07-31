@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        
+       background-color: #67E3E3;
+        }
+.main{
+    height: 680px;
+    width: 520px;
+    /* border: 1px solid; */
+    margin-top: 60px;
+    background-color: rgb(136,210,211);
+    box-shadow: rgba(10, 159, 182, 0.35) 0px 54px 55px, rgba(14, 170, 188, 0.32) 0px -12px 30px, rgba(12, 171, 157, 0.32) 0px 4px 6px, rgba(18, 172, 218, 0.17) 0px 12px 13px, rgba(10, 161, 216, 0.32) 0px -3px 5px;
+}
+#input{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+#button{
+    height: 32px;
+    width: 60px;
+    border-radius: 6px;
+}
+::placeholder{
+    font-size: 15px;
+}
+#img1{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+}
+#cel{
+    font-size:37px;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: 400;
+}
+#city{
+    font-size: 37px;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: -15px;
+    font-weight: 400 ;
+}
+#img2{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;  
+    font-size:35px;
+    color: blue;
+    font-weight:light;
+}
+#humadity{
+    font-size: 35px;
+    background-color: transparent;
+    font-weight:400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: blue;
+    margin-top:-10px;
+}
+
+</style>
+<body>
+    <center><div class="main"> <br>
+        <center><h1>Weather App</h1></center> 
+        <input type="text" id="input" placeholder=" Enter City Name">
+        <button id="button">Search</button> <br> <br>
+        <img src="" alt="" id="img1">
+        <h1 id="cel"></h1>
+        <p id="city"></p> <br>
+        <hr>
+        <h1 style="    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;   font-size: 2.1rem; ">humadity</h1>
+        <p id="humadity"></p>
+        <i class="fa-solid fa-droplet" id="img2"></i>
+        
+
+    </div></center>
+
+
+
+</body>
+</html>
+
+<script>
+
+
+
+document.getElementById("btn"), addEventListener("click", function () {
+    let in_val = document.getElementById("input").value
+
+    fetch(`https://api.weatherapi.com/v1/current.json?key=32ebcef85cd2418690790919243007&q=${in_val}`)
+    .then((res) => {
+        return res.json()
+    }).then((json) => {
+        console.log(json)
+        displayData(json);
+    })
+})
+
+function displayData(data) {
+
+    let img = document.getElementById("img1")
+    img.setAttribute("src", data.current.condition.icon)
+
+    let temp = document.getElementById("cel")
+    temp.innerHTML = data.current.temp_c + "°c";
+    
+    let city_name = document.getElementById("city")
+    city_name.innerHTML = data.location.name;
+
+
+    let humadity = document.getElementById("humadity")
+    humadity.innerHTML = data.current.humidity + " %";
+
+}
+
+
+
+
+</script>
