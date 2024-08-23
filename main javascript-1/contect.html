@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Poiret+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.a1{
+    height: 80px;
+    width: 30%;
+    border: 1px solid gray;
+    border-right: 0px;
+    float: left;
+}
+.a2{
+    height: 80px;
+    width: 70%;
+    border: 1px solid gray;
+    border-left: 0px;
+    float: left;
+}
+.a2 a{
+    text-decoration: none;
+    color: #eef2f8;
+    line-height: 80px;
+    font-size: 16px;
+    font-family: "Jost",sans-serif;
+    margin-left: 40px;
+}
+
+
+.d7{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.d8{
+    height: 500px;
+    width: 1000px;
+    /* border: 1px solid black; */
+}
+
+.d8 h1{
+    margin-left: 110px;
+    font-weight: lighter;
+}
+
+.d8 textarea{
+    margin-left: 110px;
+    border: 1px solid #bdbfc1;
+    margin-top: 15px;
+}
+
+.d8 input{
+    height: 50px;
+    text-indent: 10px;
+    border: 1px solid #bdbfc1;
+}
+
+::placeholder{
+    color: #bdbfc1;
+    font-family: Roboto;
+    margin-left: 10px;
+}
+
+.d8 button{
+    height: 55px;
+    width: 150px;
+    border: 1px solid black;
+    color: black;
+    transition-duration: 1s;
+    margin-left: 110px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.d8 button:hover{
+    background-color: black;
+    color: white;
+}
+
+.d9{
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+.d9 i{
+    margin-left: 150px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: #bdbfc1;
+}
+
+.d9 p{
+    font-family: Roboto;
+}
+footer{
+    background-color: #222222;
+    color: white;
+}
+.bt-3{
+    height: 50px;
+    width: 175px;
+    border-radius: 25px;
+    background-color:#7683e0;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+.bt-3:hover{
+    background-color:white;
+    color: #7683e0;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+
+</style>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://preview.colorlib.com/theme/cozastore/images/icons/logo-01.png" alt="" class="img-fluid ms-5 ps-5"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
+                      </li>                 
+                        <li class="nav-item">
+                    <a class="nav-link active fw-semibold" aria-current="page" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="contect.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item fs-6" style="margin-left: 50%;">
+                    <a class="nav-link active fw-semibold" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </li>              
+                  <li class="nav-item fs-6">
+                    <a class="nav-link active fw-semibold" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  </li>
+                  <li class="nav-item fs-6">
+                    <a class="nav-link active fw-semibold" href="#"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+
+        
+
+
+
+
+<center>
+<br><br><br><br><br>
+    <div style="width: 100%"><iframe width="1300px" height="450px" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rajkot+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+
+            </center>
+<br><br><br><br><br>
+            <div class="d7">
+
+                <div class="d8">
+
+                    <h1>Get in Touch</h1>
+
+                    <textarea name="" id="" cols="110" rows="15" placeholder="Enter Message"></textarea>
+
+                    <input style="margin-left: 110px; margin-top: 10px; width: 400px;" type="text" name="" id="" placeholder="Enter Your Name">
+
+                    <input style="width: 410px; margin-left: 10px;" type="email" placeholder="Email">
+<br><br>
+                    <input style="margin-left: 110px; width: 827px;" type="text" placeholder="Subject">
+
+                    <button>SEND</button>
+                </div>
+
+                <div class="d9">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <p style="margin-left: 210px; width: 200px; margin-top: -30px;">Buttonwood, California.
+                        <b style="color: #7a7e8b; font-weight: lighter;">Rosemead, CA 91770</b></p>
+<br>
+                    <i style="margin-top: 40px; margin-left: 155px;" class="fa-solid fa-mobile-screen"></i>
+<br>
+
+                    <p style="margin-left: 210px; width: 200px; margin-top: -35px;">+1 253 565 2365 <br>
+                    <b style="color: #7a7e8b; font-weight: lighter;">Mon to Fri 9am to 6pm</b></p>
+
+                    
+                    <p style="margin-left: 210px; width: 200px; margin-top: 50px;">support@colorlib.com <br>
+                        <b style="color: #7a7e8b; font-weight: lighter;">Send us your query anytime!</b></p>
+                    
+                    <i style="position: relative; top: -130px; margin-left: 153px;" class="fa-regular fa-envelope"></i>
+                </div>
+
+            </div> <br><br><br>
+            <div id="main"></div>
+            <footer style="    background-color: #222222;    color: white;" class="mt-5 pt-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <ul style="list-style: none;">
+                        <li class="text-light pt-5 fw-bold fs-6">CATAGORIES</li>
+                        <li class="pt-4 opacity-50" style="font-size: 15px;">Women</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">Men</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">Shoes</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">Watches</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <ul style="list-style: none;">
+                        <li class="text-light pt-5 fw-bold fs-6">HELP</li>
+                        <li class="pt-4 opacity-50" style="font-size: 15px;">TrackOrder</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">Returns</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">Shipping</li>
+                        <li class="pt-2 opacity-50" style="font-size: 15px;">FAQs</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <ul style="list-style: none;">
+                        <li class="text-light pt-5 fw-bold fs-6">GET IN TOUCH</li>
+                        <li class="pt-4 opacity-50" style="font-size: 15px;">Any questions? Let us know in store <br> at 8th floor, 379 Hudson St, New York,<br> NY 10018 or call us on (+1) 96 716 6879</li>
+                        <li class="pt-4" style="font-size: 20px;">
+                          <i class="fa-brands fa-facebook-f "></i>
+                          <i class="fa-brands fa-instagram ps-3"></i>
+                          <i class="fa-brands fa-pinterest ps-3"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <ul style="list-style: none;">
+                        <li class="text-light pt-5 fw-bold fs-6">NEWSLETTER</li></ul>
+                        <input type="email" style="height: 40px;background-color: transparent;width: 235px;border: none;border-bottom: 1px solid rgb(140, 140, 140);" class="ms-4 ps-2" placeholder="email@example.com">
+                        <button class="bt-3 mt-4 ms-4">SUBSCRIBE</button>
+                        </div>
+                  </div>
+                  <br><br><br><br><br>
+                  <center>
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/icon-pay-01.png" alt="" class="img-fluid">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/icon-pay-02.png" alt="" class="img-fluid">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/icon-pay-03.png" alt="" class="img-fluid">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/icon-pay-04.png" alt="" class="img-fluid">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/icon-pay-05.png" alt="" class="img-fluid"> <br> <br>
+                    <p class="fs-6 text-secondary opacity-100|
+                 H| sjxhdgfzdsa ">Copyright ©2024 All rights reserved | This template is made with  by <span class="text-primary">Colorlib</span> </p>
+                    <br>
+                  </center>
+                </div>
+                </footer>
+        
+            </body>
+            </html>
