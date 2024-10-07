@@ -1,0 +1,167 @@
+
+div {
+  text-align: center;
+  margin: 20px;
+}
+
+
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.s1 {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.s2 {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.s3 {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+
+
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e3dfdf;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+/* Center the content */
+center {
+  margin-top: 50px;
+}
+
+/* Input styling (u1 class) */
+.u1 {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling (u2 class) */
+.u2 {
+  width: 150px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Individual button styling if needed */
+/* General container styling */
+div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Input styling (d1 class) */
+.d1 {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling (d2 class) */
+.d2 {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Heading styling */
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* Centering the content */
+div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Input field styling (i1 class) */
+.i1 {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling (i2 class) */
+.i2 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/* Heading styling */
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
