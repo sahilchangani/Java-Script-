@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 110px;
+    width: 100%;
+    /* border: 1px solid; */
+    
+}
+.a1{
+    height: 50px;
+    /* border: 1px solid; */
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.a1 a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 40px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.a2{
+    height: 700px;
+    width: 1200px;
+    /* border: 1px solid; */
+    /* margin-left: 20px; */
+}
+.a2 img{
+    height: 100%;
+    width: 100%;
+}
+.a3{
+    height: 600px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+.a3 {
+    display: flex;
+    gap: 20px;
+}
+
+.a4 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    border: 1px #666;
+}
+
+.wine-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 20;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    /* transition: opacity 0.3s ease; */
+}
+
+.overlay p, .overlay .price, .overlay .stars {
+    margin: 5px 0;
+}
+.add-to-cart-btn {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #732d91;
+}
+
+
+.overlay .price {
+    font-size: 1.5em;
+    color: #8e44ad;
+}
+
+.overlay .stars {
+    color: #f1c40f;
+    font-size: 1.2em;
+}
+
+.a4:hover .wine-img {
+    transform: scale(1.05);
+}
+
+.a4:hover .overlay {
+    opacity: 1;
+}
+
+.h{
+    font-family: "Cinzel";
+    font-weight: lighter;
+    font-size: 35px;
+    
+}
+.a4{
+    height: 400px;
+    width: 350px;
+    /* border: 1px solid; */
+    margin-top: 120px;
+    margin-left: 20px;
+    background-color: #f3f4f5;
+}
+.a4 img{
+    height: 350px;
+    width: 320px;
+    margin-top: -80px;
+    margin-left: 20px;
+}
+.a4 p {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 30px;
+}
+.p1{
+    color: #8b92a2;
+    font-size: 18px;
+}
+.a5{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid; */
+    background-image: url(https://preview.colorlib.com/theme/wines/images/hero_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.a6{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    background-color: #F8F9FA;
+}
+.h11{
+    font-family: "Cinzel";
+    font-weight: lighter;
+    font-size: 35px;
+}
+.a7{
+    height: 470px; 
+    width: 350px;
+    margin-left: 20px;
+    /* border: 1px solid; */
+}
+.a7 img{
+    width: 100%;
+}
+.p2{
+    font-size: 25px;
+    font-family:   "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.s1{
+    display: none;
+}
+.p4{
+    font-size: 16px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.4;
+    color: gray;
+}
+.a8{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.a8 i{
+    font-size: 20px;
+    color: white;
+    /* background-color: white; */
+    /* margin-top: 230px; */
+    /* border-radius: 100%;   */
+    padding-top: 12px;
+}
+/* Testimonials Section */
+.a9 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    background-color: #F8F9FA;
+}
+.testimonial {
+    width: 250px;
+    background: #e8e7e7;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+.testimonial p:first-child {
+    font-size: 18px;
+    color: #333;
+}
+.testimonial p:last-child {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Gallery Section */
+.a10 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.a10 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.c1{
+    /* margin-top: 8%; */
+  /* border:  1px solid;   */
+  height: 270px;
+  width: 70%;
+  background-color: #e1e5e5;
+  display: flex;
+  margin-left: 15%;
+  justify-content: center;
+}
+.c2{
+    /* border: 1px solid; */
+    height: 170px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :5px;
+    margin-top: 50px;
+}
+.c2 i{
+    color: black;
+}
+
+
+
+/* For screens 576px and smaller */
+@media (max-width: 576px) {
+    .a2, .a3, .a6, .a9 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a4, .testimonial {
+        width: 90%;
+    }
+
+    .a1 a {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .h, .h11 {
+        font-size: 22px;
+    }
+
+    .a8 div {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+/* For screens 1300px and larger */
+@media (min-width: 1300px) {
+    .a2, .a3, .a6, .a9 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .a4, .testimonial {
+        width: 75%;
+        margin: 20px auto;
+    }
+
+    .a1 a {
+        font-size: 14px;
+        margin-left: 25px;
+    }
+
+    .h, .h11 {
+        font-size: 36px;
+    }
+
+    .a8 div {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
